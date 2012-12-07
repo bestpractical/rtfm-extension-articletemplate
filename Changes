@@ -1,5 +1,9 @@
 Revision history for RTFM-Extension-ArticleTemplates
 
+0.04  Thu Dec  6 2012
+
+    Tell CPAN not to index RT::FM::Article
+
 0.03  Thu Dec  6 2012
 
     Add a pointer to the 4.0 version of this extension, RT::Extension::ArticleTemplates

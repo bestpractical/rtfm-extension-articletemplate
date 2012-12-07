@@ -1,6 +1,6 @@
 package RTFM::Extension::ArticleTemplates;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 use 5.8.3;
 use strict;
