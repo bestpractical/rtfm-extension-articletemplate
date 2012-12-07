@@ -30,9 +30,9 @@ INSTALLATION
     Edit your /opt/rt4/etc/RT_SiteConfig.pm
         Add this line:
 
-            Set(@Plugins, qw(RT::Extension::ArticleTemplates));
+            Set(@Plugins, qw(RTFM::Extension::ArticleTemplates));
 
-        or add "RT::Extension::ArticleTemplates" to your existing @Plugins
+        or add "RTFM::Extension::ArticleTemplates" to your existing @Plugins
         line.
 
     Clear your mason cache

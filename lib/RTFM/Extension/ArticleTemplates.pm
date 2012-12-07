@@ -49,9 +49,9 @@ May need root permissions
 
 Add this line:
 
-    Set(@Plugins, qw(RT::Extension::ArticleTemplates));
+    Set(@Plugins, qw(RTFM::Extension::ArticleTemplates));
 
-or add C<RT::Extension::ArticleTemplates> to your existing C<@Plugins> line.
+or add C<RTFM::Extension::ArticleTemplates> to your existing C<@Plugins> line.
 
 =item Clear your mason cache
 
