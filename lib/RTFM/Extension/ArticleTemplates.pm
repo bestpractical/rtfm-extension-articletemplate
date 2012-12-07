@@ -33,14 +33,33 @@ template.
 
 =head1 INSTALLATION
 
-This extension requires RTFM 2.2.2 at least. To install it run the following
-commands:
+This extension requires RTFM 2.2.2.
 
-    perl Makefile.PL
-    make
-    make install
+=over
 
-Set @Plugins option if you're using RT 3.8.1 or newer.
+=item perl Makefile.PL
+
+=item make
+
+=item make install
+
+May need root permissions
+
+=item Edit your /opt/rt4/etc/RT_SiteConfig.pm
+
+Add this line:
+
+    Set(@Plugins, qw(RT::Extension::ArticleTemplates));
+
+or add C<RT::Extension::ArticleTemplates> to your existing C<@Plugins> line.
+
+=item Clear your mason cache
+
+    rm -rf /opt/rt4/var/mason_data/obj
+
+=item Restart your webserver
+
+=back
 
 =head1 AUTHOR
 

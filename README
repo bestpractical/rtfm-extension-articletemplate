@@ -20,14 +20,25 @@ VERY IMPORTANT
     be parsed after installation when it's actually is not valid template.
 
 INSTALLATION
-    This extension requires RTFM 2.2.2 at least. To install it run the
-    following commands:
+    This extension requires RTFM 2.2.2.
 
-        perl Makefile.PL
-        make
-        make install
+    perl Makefile.PL
+    make
+    make install
+        May need root permissions
 
-    Set @Plugins option if you're using RT 3.8.1 or newer.
+    Edit your /opt/rt4/etc/RT_SiteConfig.pm
+        Add this line:
+
+            Set(@Plugins, qw(RT::Extension::ArticleTemplates));
+
+        or add "RT::Extension::ArticleTemplates" to your existing @Plugins
+        line.
+
+    Clear your mason cache
+            rm -rf /opt/rt4/var/mason_data/obj
+
+    Restart your webserver
 
 AUTHOR
     Kevin Falcone <falcone@bestpractical.com> Ruslan Zakirov
