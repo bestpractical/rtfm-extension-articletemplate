@@ -1,5 +1,9 @@
 Revision history for RTFM-Extension-ArticleTemplates
 
+0.05  Thu Dec  6 2012
+
+    Fix docs to refer to this module, not the newer one in the Plugins example
+
 0.04  Thu Dec  6 2012
 
     Tell CPAN not to index RT::FM::Article
