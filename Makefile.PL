@@ -13,6 +13,8 @@ build_requires 'Test::More';
     }
 }
 
+no_index('package' => 'RT::FM::Article');
+
 sign;
 
 auto_install;
